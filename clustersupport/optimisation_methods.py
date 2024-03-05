@@ -171,7 +171,7 @@ class OptimisationMethods:
         plt.xlabel(parameter, fontsize = 14)
         plt.ylabel(metric, fontsize = 14)
         plt.title('{} for different values of {}'.format(metric, parameter), fontsize = 16)
-        plt.plot(parameter_range, scores)
+        plt.plot(parameter_range, scores, color = '#697268')
 
         if save_fig:
             plt.savefig('elbow_plot.png')
